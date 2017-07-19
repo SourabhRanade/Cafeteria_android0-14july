@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--This is the first page displayed when the app is loaded for the very first time.-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/Headings"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:gravity = "center_horizontal"
+            android:text="Welcome to Hungry!\n\nPlease enter your contact number to create your account. "
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp"/>
+
+        \
+        <EditText
+            android:id="@+id/userMobileNumberInputActivityMain"
+            android:layout_alignParentRight="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginLeft="70dp"
+            android:hint="Eg. 8149634984"
+            android:inputType="number"/>
+
+
+        <Button
+            android:id="@+id/userSignUpButtonActivityMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textAllCaps="true"
+            android:layout_margin="20dp"
+            android:text="Sign Up"
+            android:padding="8dp"
+            android:textColor="#FFF"
+            android:onClick="userSignIn"
+            android:background="@drawable/button"/>
+
+
+        <TextView
+            android:id="@+id/ifAdminClickHereTextActivityMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="bottom"
+            android:layout_marginTop="200dp"
+            android:layout_marginBottom="30dp"
+            android:text="If admin, click here."
+            android:textSize="22sp"
+            android:onClick="adminlogin" />
+
+
+
+    </LinearLayout>
+
+</ScrollView>
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+    <!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:orientation="vertical"-->
+    <!--tools:context="com.example.android.login.MainActivity">-->
+
+    <!--<Button-->
+    <!--android:id="@+id/loginu"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="0dp"-->
+    <!--android:layout_weight="1"-->
+    <!--android:text="Login as User" />-->
+
+    <!--<Button-->
+    <!--android:id="@+id/logina"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="0dp"-->
+    <!--android:layout_weight="1"-->
+    <!--android:text="Login as Admin"-->
+    <!--/>-->
+
+
+    <!--<Button-->
+    <!--android:id="@+id/sign_up_user"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="0dp"-->
+    <!--android:layout_weight="1"-->
+    <!--android:text="Sign Up as User"-->
+    <!--android:onClick="display"-->
+    <!--/>-->
+
+    <!--<Button-->
+    <!--android:id="@+id/sign_up_admin"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="0dp"-->
+    <!--android:layout_weight="1"-->
+    <!--android:text="Sign Up as Admin"-->
+    <!--android:onClick="display"-->
+    <!--/>-->
+
+
+
+
+    <!--</LinearLayout>-->
